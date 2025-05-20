@@ -20,8 +20,9 @@ const mockProjects = [
   ];
   
   export const fetchProjects = () => {
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       setTimeout(() => resolve(mockProjects), 1000);
+      setTimeout(()=>reject('failed to fetch projects'),1000)
     });
   };
   
