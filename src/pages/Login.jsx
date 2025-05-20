@@ -6,7 +6,7 @@ const Login = ({onLogin}) => {
   const navigate=useNavigate()
   const handleLogin=()=>{
     onLogin()
-    navigate('./projects')
+    navigate('/projects')
   }
   return (
     <div style={{textAlign:'center'}}>
