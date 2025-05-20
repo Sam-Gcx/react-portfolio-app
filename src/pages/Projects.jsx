@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import {useState} from 'react'
 import { fetchProjects } from '../utils/projectApi'
 import { CircularProgress, Typography } from '@mui/material'
+import ProjectCard from '../components/ProjectCard'
 
 
 
@@ -39,7 +40,7 @@ const Projects = () => {
         <div>
           {projects.map(project=>(
             <div key={project.id} style={{marginBottom:'16px'}}>
-            card
+              <ProjectCard project={project}/>
             </div>
           ))}
         </div>
